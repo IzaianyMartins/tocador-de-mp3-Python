@@ -1,8 +1,6 @@
 import pygame
 pygame.mixer.init()
-pygame.mixer.music.load('')
+#no lugar de music.mp3, indicar o caminho do arquivo 
+pygame.mixer.music.load('music.mp3')
 pygame.mixer.music.play()
-
-while pygame.mixer.music.get_busy():
-    continue
-pygame.quit()
+input()
